@@ -14,4 +14,4 @@ Two ROA files (`roa4.conf` and `roa6.conf`) will be placed in the output directo
 
 ## Performance
 
-ROAgen is fast, taking only a few seconds to generate the ROA files. It uses roughly 200MB of RAM.
+ROAgen is fast, taking only a few seconds to generate the ROA files. It uses roughly 200MB of RAM, so it's best not to run this directly on your routers unless you have the available resources.

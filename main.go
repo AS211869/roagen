@@ -72,7 +72,7 @@ func main() {
 	roa6.Write([]byte(genTime))
 
 	for _, roa := range data.ROAs {
-		roaData := []byte(fmt.Sprintf("route %s max %d as %s; # %s\n", roa.Prefix, roa.MaxLength, roa.ASN, roa.TA))
+		roaData := []byte(fmt.Sprintf("route %s max %d as %s; # %s\n", roa.Prefix, roa.MaxLength, strings.Replace(roa.ASN, "AS", "", 1), roa.TA))
 
 		if strings.Contains(roa.Prefix, ":") {
 			roa6.Write(roaData)
